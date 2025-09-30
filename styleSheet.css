@@ -39,8 +39,8 @@ Katsotaan vielä kannattaisiko kaikki elementit lisätä ruudukkomuodossa*/
 }
 .button1:hover {
   background-color: #13ED20;
-
 }   
+
     /* Painikkeen ulkonäkö (Kasaa koneesi ja Tilaa nyt painikkeet)*/
 .button2 {
   display: inline-block;
