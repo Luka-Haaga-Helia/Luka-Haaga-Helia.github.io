@@ -35,6 +35,9 @@ body {
 .content {
   grid-column-start: 3;
   grid-column-end: 4;
+  border: 5px solid #00BFFF;
+  padding: 20px;
+  background-color: #242424;
 }
 
 /* Navigointipainikkeiden ulkonäkö */
