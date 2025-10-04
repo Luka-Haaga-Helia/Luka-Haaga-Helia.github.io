@@ -6,6 +6,10 @@ body {
     background-color: #121212;
 }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Sivuston rakenteen ruudukkomalli.
 Katsotaan vielä kannattaisiko kaikki elementit lisätä ruudukkomuodossa*/
 .grid-container {
@@ -59,5 +63,3 @@ Katsotaan vielä kannattaisiko kaikki elementit lisätä ruudukkomuodossa*/
 .button2:hover {
   background-color: #00BFFF;
 }
-
-
