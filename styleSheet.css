@@ -10,19 +10,31 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Sivuston rakenteen ruudukkomalli.
-Katsotaan vielä kannattaisiko kaikki elementit lisätä ruudukkomuodossa*/
+/* Sivuston rakenteen ruudukkomalli. Koko sisältö nyt yhden ruudukon sisällä*/
 .grid-container {
   display: grid;
-  grid: 'left right';
-  grid-gap: 10px;
-  grid-template-columns: min-content;
+  grid-template-columns: 140px 70px auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+.logoCell {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.navigation {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 .imageCell {
-  grid-area: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .content {
-  grid-area: right;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 /* Navigointipainikkeiden ulkonäkö */
@@ -45,9 +57,28 @@ Katsotaan vielä kannattaisiko kaikki elementit lisätä ruudukkomuodossa*/
   background-color: #13ED20;
 }   
 
+    /* Tilaa nyt painikkeen ulkonäkö*/
+.button2 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #13ED20;
+  color: #f5f5f5;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: #00BFFF;
+}
+
 /*@media -sääntö vaikuttaa vain kun näytön leveys on alle tietty määrä pikseleitä.
   Toisin sanoen @median sisällä voi korvata elementtien ulkonäköä MOBIILINÄYTTÖÖN */
-@media only screen and (max-width: 837px) {
+@media only screen and (max-width: 868px) {
   /*Tässä muutetaan valikkonappuloiden ulkonäkö muutumaan pienenevän näytön mukana.
     Nappulat ovat päällekäin, ja jatkuvat näytön oikeaan laitaan.
     Hover poistettu, sillä kosketusnäytöllä ei voi leijuttaa*/
@@ -69,23 +100,19 @@ Katsotaan vielä kannattaisiko kaikki elementit lisätä ruudukkomuodossa*/
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
-}
-
-    /* Painikkeen ulkonäkö (Kasaa koneesi ja Tilaa nyt painikkeet)*/
-.button2 {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #13ED20;
-  color: #f5f5f5;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 40px;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-.button2:hover {
-  background-color: #00BFFF;
+  /*TIlaa nyt nyt -nappulan ulkonäkö mobiilikoossa (pienempi fontti)*/
+  .button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #13ED20;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
 }
