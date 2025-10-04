@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakenna Unelmiesi Tietokone</title>
+    <title>Kasaamo</title>
     <link rel="stylesheet" href="styleSheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-     <!-- Yläpalkki samalla rivillä -->
-    <div>
-        <img src="Kone-Kasaamo-logo.png" alt="KONE KASAAMON logo" class="logo">
-    
-            <!-- Linkki kasaamo.html sivulle ja yhteystiedot.html sivulle -->
-        <a href="kasaamo.html" class="button1">Kasaamo</a>
-        <a href="yhteystiedot.html" class="button1">Yhteystiedot</a>
-    </div>
-
-     <!-- Otsikko (muutetaan myöhemmin) -->
-    
+     <!-- Yläpalkki samalla rivillä, linkit sivuille-->
+    <div class="grid-container">
+        <div class="imageCell">
+            <img src="Kone-Kasaamo-logo.png" alt="KONE KASAAMON logo" class="logo">
+        </div>
+        <div class="content">
+            <a href="index.html"        class="button1">Etusivu</a>
+            <a href="kasaamo.html"      class="button1">Kasaamo</a>
+            <a href="yhteystiedot.html" class="button1">Yhteystiedot</a>
+        </div>
+    </div> 
     <div class="grid-container"> 
 
         <div class="imageCell">
@@ -30,18 +30,15 @@
             <h1>Tervetuloa KONE KASAAMOON!</h1>
 
             <!-- Leipäteksti tai asiasisältö p-elementtien sisällä -->
-            <a href="kasaamo.html" class="button2">Kasaa koneesi!</a>
-
             <p>
-                KONE KASAAMO kasaa koneesi hetkessä. Valitse kone jonka haluat kasattavan ja kasaamme sen puolestasi!
-                Kasaamossa pääset itse kustomoimaan haluamasi tietokoneen
-            </p>
-            <p>
+                KONE KASAAMO kasaa koneesi hetkessä. </br>
+                Kasaamossa pääset itse kustomoimaan haluamasi tietokoneen </br>
+                Valitse kone jonka haluat kasattavan ja kasaamme sen puolestasi! </br>
                 Toimitus kotiovellesi muutamassa päivässä!
             </p>
 
             <!-- Tilaa nyt painike -->
-            <a href="kasaamo.html" class="button2">Tilaa nyt!</a>
+            <a href="kasaamo.html" class="button2">Kasaa koneesi!</a>
         </div>
     </div>
 </body>
