@@ -119,4 +119,28 @@ body {
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 4px;
+  padding: 4px;
+  }
+  .logoCell {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .navigation {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .content {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 5px solid #00BFFF;
+    padding: 20px;
+    background-color: #242424;
+  }
+  .displayImage {
+    display: none;
+  }
 }
