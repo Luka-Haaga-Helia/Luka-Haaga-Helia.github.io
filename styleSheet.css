@@ -28,8 +28,8 @@ body {
 .imageCell {
   grid-column-start: 1;
   grid-column-end: 2;
-  display:flex;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -79,6 +79,9 @@ body {
 .button2:hover {
   background-color: #00BFFF;
 }
+.displayImage2 {
+  display: none;
+}
 
 /*@media -sääntö vaikuttaa vain kun näytön leveys on alle tietty määrä pikseleitä.
   Toisin sanoen @median sisällä voi korvata elementtien ulkonäköä MOBIILINÄYTTÖÖN */
@@ -121,7 +124,7 @@ body {
   }
   .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 140px auto;
   gap: 4px;
   padding: 4px;
   }
@@ -131,16 +134,27 @@ body {
   }
   .navigation {
     grid-column-start: 2;
-    grid-column-end: 4;
   }
   .content {
     grid-column-start: 1;
-    grid-column-end: 4;
     border: 5px solid #00BFFF;
     padding: 20px;
     background-color: #242424;
   }
-  .displayImage {
+  .imageCell {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .displayImage1 {
     display: none;
+  }
+  .displayImage2 {
+    display: block;
   }
 }
